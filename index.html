@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Alexia Gray 🤍</title>
+  <meta name="description" content="Alexia Gray's private content.">
+  <meta name="author" content="Top Drawer Models">
+
+  <meta property="og:title" content="Alexia Gray 🤍">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexiagray.co.uk">
+  <meta property="og:description" content="Alexia Gray's private content.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/views/css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05MS2QSGFX"></script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="/views/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+<header>
+  <img src="/views/img/favicon.ico" class="logoimg">
+  <div class="flex-container">
+    <a href="https://onlyfans.com/alexiagray"><div class="name">Alexia Gray</div></a>
+  </div>
+</header>
+
+<div class='flexbox'>
+  <div class="overlay"></div>
+  <a href="https://onlyfans.com/alexiagray"><div class="slideshow-container">
+    <ejs>
+      <marquee behavior="" direction="left">
+        <div class="marqueetext"><%= prices %> <span class="clickHere">Click here!! 😍</span></div>
+        </marquee>
+    </ejs>
+    <div class="mySlides fade">
+      <img src="/views/img/img1.jpeg" style="width: 100%; border-radius: 10px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="/views/img/img2.jpeg" style="width: 100%; border-radius: 10px;">   
+    </div>
+    <div class="mySlides fade">
+      <img src="/views/img/img3.jpeg" style="width: 100%; border-radius: 10px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="/views/img/img4.jpeg" style="width: 100%; border-radius: 10px;">
+    </div>
+  </div>
+  </a>
+    <div class="main-content1">
+      <div class="locationStyles"> 
+        <div class="locationDiv">
+          <span>📍</span> 
+          <span class="location"></span> 
+        </div>
+        <div class="onlineNowAndEmoji">
+          <div class="pulsating-circle"></div> <div class="online">Online Now</div>  
+        </div>
+      </div>  
+      <div class='textbox1'>
+        <p class='emojiClass'> <span class='emoji'>🎥</span>I ❤️ fucking strangers I find online </p>
+        <p class='emojiClass'><span class='emoji'>😉</span>DM me about making content </p>
+      </div>
+      <div class='textbox2'>
+        <p class='polishtext'>👄Your own thick polish babe👄</p> 
+        <p>Come and get to know the REAL me, behind closed doors. I’m sure you’ll love hearing and seeing ALL of me
+        😛</p>
+      </div>
+      <div class='button-container'>
+        <a href ="https://onlyfans.com/alexiagray" class="button-sticky"><div class="button-sticky">SEE MY PRIVATE CONTENT ❤️</div></a>
+          <p class ='getAccess'><%= prices %></p>
+      </div>
+    </div>
+  </div> 
+  <div style="text-align:center; display:none">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-05MS2QSGFX');
+  let slideIndex = 0;
+  showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
